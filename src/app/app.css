@@ -1,0 +1,33 @@
+.example-card {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.example-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.counter-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.counter-actions button {
+  min-width: 5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: white;
+  color: #111;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+.counter-actions button:hover {
+  background: rgba(0, 0, 0, 0.04);
+}

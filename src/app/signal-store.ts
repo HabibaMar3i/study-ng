@@ -1,9 +1,3 @@
-
-## Signal store example
-
-A small signal store keeps state and update logic together while still staying reactive.
-
-```ts
 import { computed, signal } from '@angular/core';
 
 export interface CounterState {
@@ -28,6 +22,3 @@ export class CounterStore {
     this._state.set({ count: 0 });
   }
 }
-```
-
-Use the store from a component to read `count()` and update state with `increment()` / `decrement()`.
