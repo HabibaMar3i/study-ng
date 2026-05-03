@@ -1,14 +1,14 @@
-<main class="main">
-  <div class="content">
-      <section class="example-card">
-        <h2>Signal store example</h2>
-        <p>This demo uses a small store-like class with a signal state and computed values.</p>
-        <p>Count: <strong>{{ counter.count() }}</strong></p>
-        <p>Double: <strong>{{ counter.double() }}</strong></p>
-        <div class="counter-actions">
-          <button type="button" (click)="counter.decrement()">-</button>
-          <button type="button" (click)="counter.increment()">+</button>
-          <button type="button" (click)="counter.reset()">Reset</button>
+<main class="min-h-screen bg-slate-50 px-6 py-10 text-slate-900">
+  <div class="mx-auto max-w-3xl">
+      <section class="mt-6 p-6 border border-slate-200 rounded-3xl bg-white/80 shadow-sm">
+        <h2 class="text-xl font-semibold mb-2">Signal store example</h2>
+        <p class="text-sm text-slate-600 mb-4">This demo uses a small store-like class with a signal state and computed values.</p>
+        <p class="text-base">Count: <strong class="text-slate-900">{{ counter.count() }}</strong></p>
+        <p class="text-base mb-4">Double: <strong class="text-slate-900">{{ counter.double() }}</strong></p>
+        <div class="mt-4 flex flex-wrap gap-3">
+          <button class="min-w-[5rem] rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 transition hover:bg-slate-100" type="button" (click)="counter.decrement()">-</button>
+          <button class="min-w-[5rem] rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 transition hover:bg-slate-100" type="button" (click)="counter.increment()">+</button>
+          <button class="min-w-[5rem] rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 transition hover:bg-slate-100" type="button" (click)="counter.reset()">Reset</button>
         </div>
       </section>
     </div>
